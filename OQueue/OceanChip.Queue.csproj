@@ -55,23 +55,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Broker\BrokerController.cs" />
+    <Compile Include="Broker\IConsumeOffsetStore.cs" />
+    <Compile Include="Broker\IMessageStore.cs" />
+    <Compile Include="Broker\IQueue.cs" />
+    <Compile Include="Broker\IQueueStore.cs" />
+    <Compile Include="Broker\Queue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Protocols\BatchMessageItemResult.cs" />
     <Compile Include="Protocols\BatchMessageStoreResult.cs" />
+    <Compile Include="Protocols\Brokers\BrokerInfo.cs" />
+    <Compile Include="Protocols\Brokers\BrokerRequestCode.cs" />
+    <Compile Include="Protocols\Brokers\BrokerRole.cs" />
+    <Compile Include="Protocols\Brokers\BrokerStatisticInfo.cs" />
+    <Compile Include="Protocols\Brokers\ConsumerHeatbeatData.cs" />
+    <Compile Include="Protocols\Brokers\ConsumerInfo.cs" />
+    <Compile Include="Protocols\Brokers\QueueKey.cs" />
+    <Compile Include="Protocols\Brokers\Requests\AddQueueRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\BatchSendMessageRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\CreateTopRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\DeleteConsumerGroupRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\DeleteQueueRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\DeleteTopicRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\GetConsumerIdsForTopRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\GetConsumerListRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\GetMessageDetailRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\GetTopicConsumeInfoRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\GetTopicQueueInfoRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\PullMessageRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\SendMessageRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\SetQueueConsumerVisibleRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\SetQueueNextConsumeOffsetRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\SetQueueProducerVisibleRequest.cs" />
+    <Compile Include="Protocols\Brokers\Requests\UpdateQueueOffsetRequest.cs" />
+    <Compile Include="Protocols\Brokers\TopicConsumeInfo.cs" />
+    <Compile Include="Protocols\Brokers\TopicQueueInfo.cs" />
     <Compile Include="Protocols\ConsumeFromWhere.cs" />
     <Compile Include="Protocols\Message.cs" />
     <Compile Include="Protocols\MessageQueue.cs" />
     <Compile Include="Protocols\MessageQueueEx.cs" />
     <Compile Include="Protocols\MessageStoreResult.cs" />
+    <Compile Include="Protocols\NameServers\BrokerConsumerListInfo.cs" />
+    <Compile Include="Protocols\NameServers\BrokerProducerListInfo.cs" />
+    <Compile Include="Protocols\NameServers\BrokerStatusInfo.cs" />
+    <Compile Include="Protocols\NameServers\BrokerTopicConsumeInfo.cs" />
+    <Compile Include="Protocols\NameServers\BrokerTopQueueInfo.cs" />
+    <Compile Include="Protocols\NameServers\ClientRole.cs" />
+    <Compile Include="Protocols\NameServers\NameServerRequestCode.cs" />
+    <Compile Include="Protocols\NameServers\Requests\AddQueueForClusterRequest.cs" />
+    <Compile Include="Utils\BatchMessageUtils.cs" />
+    <Compile Include="Protocols\NameServers\Requests\BrokerRegistrationRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\BrokerUnRegistrationRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\CreateTopicForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\DeleteConsumerGroupForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\DeleteQueueForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\DeleteTopicForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetClusterBrokersRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetConsumerListRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetProducerListRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetTopicAccumulateInfoListRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetTopicConsumeInfoRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetTopicQueueInfoRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\GetTopicRouteInfoRequest.cs" />
+    <Compile Include="Utils\MessageIdUtil.cs" />
+    <Compile Include="Protocols\NameServers\Requests\SetQueueConsumerVisibleForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\SetQueueNextConsumeOffsetForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\Requests\SetQueueProducerVisibleForClusterRequest.cs" />
+    <Compile Include="Protocols\NameServers\TopicAccumulateInfo.cs" />
+    <Compile Include="Protocols\NameServers\TopicRouteInfo.cs" />
     <Compile Include="Protocols\PullStatus.cs" />
     <Compile Include="Protocols\QueueMessage.cs" />
     <Compile Include="Protocols\ResponseCode.cs" />
+    <Compile Include="Utils\MessageUtils.cs" />
+    <Compile Include="Utils\RemotingResponseFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Protocols\Brokers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
