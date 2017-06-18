@@ -169,7 +169,7 @@ namespace OceanChip.Queue.Clients.Consumers
                     _consumer.GroupName,
                     topic,
                     brokerConnection.AdminRemotingClient.ServerEndPoint.ToAddress(),
-                    remotingResponse.RequestCode,
+                    remotingResponse.ResponseCode,
                     Encoding.UTF8.GetString(remotingResponse.ResponseBody)
                     ));
             }

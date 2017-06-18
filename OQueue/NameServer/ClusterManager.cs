@@ -553,11 +553,11 @@ namespace OceanChip.Queue.NameServer
         private IEnumerable<int> CreateTopicOnBroker(string topic,Broker broker)
         {
             var brokerAdminEndpoint = broker.BrokerInfo.AdminAddress.ToEndPoint();
-            var adminRomotingClient = new SocketRemotingClient(brokerAdminEndpoint, _nameServerController.Setting.SocketSetting);
+            var adminRomotingClient = new SocketRemotingClient(brokerAdminEndpoint, _nameServerController.Setting.SocketSetting).Start(); ;
             var requestData = _binarySerializer.Serialize(new CreateTopicRequest(topic));
             var remotingRequest = new RemotingRequest((int)BrokerRequestCode.CreateTopic, requestData);
             var remotingResponse = adminRomotingClient.InvokeSync(remotingRequest, 30000);
-            if(remotingResponse.RequestCode != ResponseCode.Success)
+            if(remotingResponse.ResponseCode != ResponseCode.Success)
             {
                 throw new Exception($"通过Broker自动创建Topic失败，失败原因:{Encoding.UTF8.GetString(remotingResponse.ResponseBody)}");
             }

@@ -99,35 +99,37 @@ namespace OceanChip.Queue.Broker
 
         private void RegisterRequestHandlers()
         {
-            RegisterRequestHandler<ProducerHeartbeatRequestHandler>(BrokerRequestCode.ProductHeartbeat);
-            RegisterRequestHandler<BatchSendMessageRequestHandler>(BrokerRequestCode.BatchSendMessage);
-            RegisterRequestHandler<ConsumerHeartbeatRequestHandler>(BrokerRequestCode.ConsumerHeartbeat);
-            RegisterRequestHandler<GetConsumerIdsForTopicRequestHandler>(BrokerRequestCode.GetConsumerIdsForTopic);
-            RegisterRequestHandler<PullMessageRequestHandler>(BrokerRequestCode.PullMessage);
-            RegisterRequestHandler<SendMessageRequestHandler>(BrokerRequestCode.SendMessage);
-            RegisterRequestHandler<UpdateQueueConsumeOffsetRequestHandler>(BrokerRequestCode.UpdateQueueConsumeOffsetRequest);
+            _producerSocketRemotingServer.RegisterRequestHandler<ProducerHeartbeatRequestHandler>(BrokerRequestCode.ProductHeartbeat);
+            _producerSocketRemotingServer.RegisterRequestHandler<SendMessageRequestHandler>(BrokerRequestCode.SendMessage);
+            _producerSocketRemotingServer.RegisterRequestHandler<BatchSendMessageRequestHandler>(BrokerRequestCode.BatchSendMessage);
 
-            RegisterRequestHandler<AddQueueRequestHandler>(BrokerRequestCode.AddQueue);
-            RegisterRequestHandler<CreateTopicRequestHandler>(BrokerRequestCode.CreateTopic);
-            RegisterRequestHandler<DeleteConsumerGroupRequestHandler>(BrokerRequestCode.DeleteConsumerGroup);
-            RegisterRequestHandler<DeleteQueueRequestHandler>(BrokerRequestCode.DeleteQueue);
-            RegisterRequestHandler<DeleteTopicRequestHandler>(BrokerRequestCode.DeleteTopic);
-            RegisterRequestHandler<GetBrokerStatisticInfoRequestHandler>(BrokerRequestCode.GetBrokerStatisticInfo);
-            RegisterRequestHandler<GetBrokerLastestSendMessagesRequestHandler>(BrokerRequestCode.GetLastestMessages);
-            RegisterRequestHandler<GetConsumerListRequestHandler>(BrokerRequestCode.GetConsumerList);
-            RegisterRequestHandler<GetMessageDetailRequestHandler>(BrokerRequestCode.GetMessageDetail);
-            RegisterRequestHandler<GetProducerListRequestHandler>(BrokerRequestCode.GetProducerList);
-            RegisterRequestHandler<GetTopicConsumeInfoRequestHandler>(BrokerRequestCode.GetTopicConsumeInfo);
-            RegisterRequestHandler<GetTopicQueueInfoRequestHandler>(BrokerRequestCode.GetTopicQueueInfo);
-            RegisterRequestHandler<SetQueueConsumerVisibleRequestHandler>(BrokerRequestCode.SetQueueConsumerVisible);
-            RegisterRequestHandler<SetQueueNextConsumeOffsetRequestHandler>(BrokerRequestCode.SetQueueNextConsumeOffset);
-            RegisterRequestHandler<SetQueueProducerVisibleRequestHandler>(BrokerRequestCode.SetQueueProducerVisible);
+           _consumerSocketRemotingServer.RegisterRequestHandler<ConsumerHeartbeatRequestHandler>(BrokerRequestCode.ConsumerHeartbeat);
+            _consumerSocketRemotingServer.RegisterRequestHandler<PullMessageRequestHandler>(BrokerRequestCode.PullMessage);
+
+            _adminSocketRemotingServer.RegisterRequestHandler<GetConsumerIdsForTopicRequestHandler>(BrokerRequestCode.GetConsumerIdsForTopic);
+            _adminSocketRemotingServer.RegisterRequestHandler<UpdateQueueConsumeOffsetRequestHandler>(BrokerRequestCode.UpdateQueueConsumeOffsetRequest);
+
+            _adminSocketRemotingServer.RegisterRequestHandler<AddQueueRequestHandler>(BrokerRequestCode.AddQueue);
+            _adminSocketRemotingServer.RegisterRequestHandler<CreateTopicRequestHandler>(BrokerRequestCode.CreateTopic);
+            _adminSocketRemotingServer.RegisterRequestHandler<DeleteConsumerGroupRequestHandler>(BrokerRequestCode.DeleteConsumerGroup);
+            _adminSocketRemotingServer.RegisterRequestHandler<DeleteQueueRequestHandler>(BrokerRequestCode.DeleteQueue);
+            _adminSocketRemotingServer.RegisterRequestHandler<DeleteTopicRequestHandler>(BrokerRequestCode.DeleteTopic);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetBrokerStatisticInfoRequestHandler>(BrokerRequestCode.GetBrokerStatisticInfo);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetBrokerLastestSendMessagesRequestHandler>(BrokerRequestCode.GetLastestMessages);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetConsumerListRequestHandler>(BrokerRequestCode.GetConsumerList);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetMessageDetailRequestHandler>(BrokerRequestCode.GetMessageDetail);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetProducerListRequestHandler>(BrokerRequestCode.GetProducerList);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetTopicConsumeInfoRequestHandler>(BrokerRequestCode.GetTopicConsumeInfo);
+            _adminSocketRemotingServer.RegisterRequestHandler<GetTopicQueueInfoRequestHandler>(BrokerRequestCode.GetTopicQueueInfo);
+            _adminSocketRemotingServer.RegisterRequestHandler<SetQueueConsumerVisibleRequestHandler>(BrokerRequestCode.SetQueueConsumerVisible);
+            _adminSocketRemotingServer.RegisterRequestHandler<SetQueueNextConsumeOffsetRequestHandler>(BrokerRequestCode.SetQueueNextConsumeOffset);
+            _adminSocketRemotingServer.RegisterRequestHandler<SetQueueProducerVisibleRequestHandler>(BrokerRequestCode.SetQueueProducerVisible);
 
         }
-        private void RegisterRequestHandler<T>(BrokerRequestCode code) where T: class,IRequestHandler, new()
-        {
-            _producerSocketRemotingServer.RegisterRequestHandler((int)code, new T());
-        }
+        //private void RegisterRequestHandler<T>(BrokerRequestCode code,SocketRemotingServer server) where T: class,IRequestHandler, new()
+        //{
+        //    server.RegisterRequestHandler((int)code, new T());
+        //}
 
         public static BrokerController Create(BrokerSetting setting = null)
         {
@@ -326,12 +328,12 @@ namespace OceanChip.Queue.Broker
                 var data = _binarySerializer.Serialize(request);
                 var remotingRequest = new RemotingRequest((int)NameServerRequestCode.RegisterBroker, data);
                 var remotingResponse = client.InvokeSync(remotingRequest, 5000);
-                if(remotingResponse.RequestCode != ResponseCode.Success)
+                if(remotingResponse.ResponseCode != ResponseCode.Success)
                 {
                     _logger.ErrorFormat("注册Broker服务失败,BrokerInfo:{0},nameServerAddress:{1},返回码：{2},错误信息：{3}", 
                         Setting.BrokerInfo, 
                         nameServerAddress,
-                        remotingResponse.RequestCode,
+                        remotingResponse.ResponseCode,
                         Encoding.UTF8.GetString(remotingResponse.ResponseBody));
                 }
             }catch(Exception ex)
@@ -360,12 +362,12 @@ namespace OceanChip.Queue.Broker
                 var data = _binarySerializer.Serialize(request);
                 var remotingRequest = new RemotingRequest((int)NameServerRequestCode.UnregisterBroker, data);
                 var remotingResponse = client.InvokeSync(remotingRequest, 5000);
-                if (remotingResponse.RequestCode != ResponseCode.Success)
+                if (remotingResponse.ResponseCode != ResponseCode.Success)
                 {
                     _logger.ErrorFormat("注销Broker服务失败,BrokerInfo:{0},nameServerAddress:{1},返回码：{2},错误信息：{3}",
                         Setting.BrokerInfo,
                         nameServerAddress,
-                        remotingResponse.RequestCode,
+                        remotingResponse.ResponseCode,
                         Encoding.UTF8.GetString(remotingResponse.ResponseBody));
                 }
             }

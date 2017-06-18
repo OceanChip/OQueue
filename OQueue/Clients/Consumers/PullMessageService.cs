@@ -270,40 +270,40 @@ namespace OceanChip.Queue.Clients.Consumers
             return false;
         }
 
-        private void ProcessPullResponse(PullRequest request, RemotingResponse result, Action<IEnumerable<QueueMessage>> handlePulledMessageAction)
+        private void ProcessPullResponse(PullRequest request, RemotingResponse remotingResponse, Action<IEnumerable<QueueMessage>> handlePulledMessageAction)
         {
-            if (result != null)
+            if (remotingResponse != null)
             {
                 _logger.Error($"拉取消费返回值为null,pullRequest:{request}");
                 SchedulePullRequest(request);
                 return;
             }
-            if(result.ResponseCode == -1)
+            if(remotingResponse.ResponseCode == -1)
             {
-                _logger.ErrorFormat("拉取消息失败，pullRequest:{0},errorMessage:{1}", request, Encoding.UTF8.GetString(result.ResponseBody));
+                _logger.ErrorFormat("拉取消息失败，pullRequest:{0},errorMessage:{1}", request, Encoding.UTF8.GetString(remotingResponse.ResponseBody));
                 SchedulePullRequest(request);
                 return;
             }
-            if(result.RequestCode ==(short) PullStatus.Found)
+            if(remotingResponse.RequestCode ==(short) PullStatus.Found)
             {
-                var messages = DecodeMessages(request, result.ResponseBody);
+                var messages = DecodeMessages(request, remotingResponse.ResponseBody);
                 if (messages.Count() > 0)
                 {
                     handlePulledMessageAction(messages);
                     request.NextConsumeOffset = messages.Last().QueueOffset + 1;
                 }
-            }else if (result.ResponseCode == (short)PullStatus.NextOffsetReset)
+            }else if (remotingResponse.ResponseCode == (short)PullStatus.NextOffsetReset)
             {
-                var nextOffset = BitConverter.ToInt64(result.ResponseBody, 0);
+                var nextOffset = BitConverter.ToInt64(remotingResponse.ResponseBody, 0);
                 ResetNextConsumeOffset(request, nextOffset);
-            }else if(result.ResponseCode == (short)PullStatus.NoNewMessage)
+            }else if(remotingResponse.ResponseCode == (short)PullStatus.NoNewMessage)
             {
 
-            }else if (result.ResponseCode == (short)PullStatus.Ignored)
+            }else if (remotingResponse.ResponseCode == (short)PullStatus.Ignored)
             {
                 _logger.InfoFormat("Pull Request已经取消，pullRequest:{0}", request);
                 return;
-            }else if(result.ResponseCode == (short)PullStatus.BrokerIsCleaning)
+            }else if(remotingResponse.ResponseCode == (short)PullStatus.BrokerIsCleaning)
             {
                 Thread.Sleep(5000);
             }

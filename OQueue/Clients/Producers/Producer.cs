@@ -156,7 +156,7 @@ namespace OceanChip.Queue.Clients.Producers
             BrokerConnection brokerConnection;
             if (!TryGetAvailableMessageQueue(message, routingKey, out messageQueue, out brokerConnection))
             {
-                throw new Exception(string.Format("topic[{0}]的消息队列无效", messageQueue.Topic));
+                throw new Exception(string.Format("topic[{0}]的消息队列无效", message.Topic));
             }
             var remotingRequest = BuildSendMessageRequest(message, messageQueue.QueueId, brokerConnection);
             brokerConnection.RemotingClient.InvokeWithCallback(remotingRequest);
@@ -211,12 +211,12 @@ namespace OceanChip.Queue.Clients.Producers
         public static BatchSendResult ParseBatchSendResult(RemotingResponse remotingResponse)
         {
             Check.NotNull(remotingResponse, nameof(remotingResponse));
-            if (remotingResponse.RequestCode == ResponseCode.Success)
+            if (remotingResponse.ResponseCode == ResponseCode.Success)
             {
                 var result = BatchMessageUtils.DecodeMessageStoreResult(remotingResponse.ResponseBody);
                 return new BatchSendResult(SendStatus.Success, result, null);
             }
-            else if (remotingResponse.RequestCode == 0)
+            else if (remotingResponse.ResponseCode == 0)
             {
                 return new BatchSendResult(SendStatus.Timeout, null, Encoding.UTF8.GetString(remotingResponse.ResponseBody));
             }
@@ -275,11 +275,11 @@ namespace OceanChip.Queue.Clients.Producers
         public static SendResult ParseSendResult(RemotingResponse remotingResponse)
         {
             Check.NotNull(remotingResponse, nameof(remotingResponse));
-            if(remotingResponse.RequestCode == ResponseCode.Success)
+            if(remotingResponse.ResponseCode == ResponseCode.Success)
             {
                 var result = MessageUtils.DecodeMessageStoreResult(remotingResponse.ResponseBody);
                 return new SendResult(SendStatus.Success, result, null);
-            }else if (remotingResponse.RequestCode == 0)
+            }else if (remotingResponse.ResponseCode == 0)
             {
                 return new SendResult(SendStatus.Timeout, null, Encoding.UTF8.GetString(remotingResponse.ResponseBody));
             }

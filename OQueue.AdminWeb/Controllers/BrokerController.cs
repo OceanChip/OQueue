@@ -136,7 +136,7 @@ namespace OQueue.AdminWeb.Controllers
         {
             ViewBag.ClusterName = clusterName;
             ViewBag.BrokerName = brokerName;
-            _messageService.DeletOQueue(clusterName, brokerName, topic, queueId);
+            _messageService.DeleteQueue(clusterName, brokerName, topic, queueId);
             return RedirectToAction("QueueInfoList", new { ClusterName = clusterName, BrokerName = brokerName, Topic = topic });
         }
         public ActionResult SetQueueProducerVisible(string clusterName, string brokerName, string topic, int queueId, bool visible)

@@ -293,7 +293,7 @@ namespace OceanChip.Queue.Clients
             var data = _binarySerializer.Serialize(request);
             var remotingRequest = new RemotingRequest((int)NameServerRequestCode.GetTopicRouteInfo, data);
             var remotingResponse = nameServerClient.InvokeSync(remotingRequest, 5000);
-            if(remotingResponse.RequestCode != ResponseCode.Success)
+            if(remotingResponse.ResponseCode != ResponseCode.Success)
             {
                 throw new Exception($"通过地址获取名字路由信息失败,topic:{topic},nameServeAddress:{nameServerClient},remoting ResponseCode:{remotingResponse.ResponseCode},errorMessage:{Encoding.UTF8.GetString(remotingResponse.ResponseBody)}");
             }

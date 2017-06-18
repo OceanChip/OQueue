@@ -1,4 +1,6 @@
-﻿using OceanChip.Common.Storage;
+﻿using OceanChip.Common.Remoting;
+using OceanChip.Common.Storage;
+using OceanChip.Queue.Protocols.Brokers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,11 @@ namespace OceanChip.Queue.Broker
                 record.ReadFrom(recordBuffer);
                 return record;
             });
+        }
+        public static SocketRemotingServer RegisterRequestHandler<T>(this SocketRemotingServer server, BrokerRequestCode code)where T: class,IRequestHandler, new()
+        {
+            server.RegisterRequestHandler((int)code, new T());
+            return server;
         }
     }
 }

@@ -324,7 +324,7 @@ namespace OQueue.AdminWeb
                 throw new Exception(string.Format("AddQueue failed, errorMessage: {0}", Encoding.UTF8.GetString(remotingResponse.ResponseBody)));
             }
         }
-        public void DeletOQueue(string clusterName, string topic, int queueId)
+        public void DeleteQueue(string clusterName, string topic, int queueId)
         {
             var remotingClient = GetAvailableNameServerRemotingClient();
             var requestData = _binarySerializer.Serialize(new DeleteQueueForClusterRequest
@@ -340,7 +340,7 @@ namespace OQueue.AdminWeb
                 throw new Exception(string.Format("DeletOQueue failed, errorMessage: {0}", Encoding.UTF8.GetString(remotingResponse.ResponseBody)));
             }
         }
-        public void DeletOQueue(string clusterName, string brokerName, string topic, int queueId)
+        public void DeleteQueue(string clusterName, string brokerName, string topic, int queueId)
         {
             var remotingClient = GetBrokerByName(clusterName, brokerName);
             var requestData = _binarySerializer.Serialize(new DeleteQueueRequest(topic, queueId));

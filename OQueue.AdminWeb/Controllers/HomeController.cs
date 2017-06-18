@@ -173,7 +173,7 @@ namespace OQueue.AdminWeb.Controllers
         public ActionResult DeletOQueue(string clusterName, string topic, int queueId)
         {
             ViewBag.ClusterName = clusterName;
-            _messageService.DeletOQueue(clusterName, topic, queueId);
+            _messageService.DeleteQueue(clusterName, topic, queueId);
             return RedirectToAction("QueueInfoList", new { ClusterName = clusterName, Topic = topic });
         }
         public ActionResult SetQueueProducerVisible(string clusterName, string topic, int queueId, bool visible)

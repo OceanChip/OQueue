@@ -1,0 +1,903 @@
+2017-06-19 06:21:47,092  INFO OceanChip.Common.Socketing.ClientSocket - 连接成功,远程地址：192.168.1.2:9593，本地地址：192.168.1.2:51027
+2017-06-19 06:21:47,302  INFO OceanChip.Common.Socketing.ClientSocket - 连接成功,远程地址：192.168.1.2:5000，本地地址：192.168.1.2:51028
+2017-06-19 06:21:47,302  INFO OceanChip.Common.Socketing.ClientSocket - 连接成功,远程地址：192.168.1.2:5002，本地地址：192.168.1.2:51029
+2017-06-19 06:21:47,302  INFO OceanChip.Queue.Clients.ClientService - 添加Broker:[BrokerName=Broker1,GroupName=BrokerGroup1,ClusterName=DefaultCluster,BrokerRole=0,ProducerAddress=192.168.1.2:5000,ConsumerAddress=192.168.1.2:5001,AdminAddress=192.168.1.2:5002]
+2017-06-19 06:21:47,305  INFO OceanChip.Queue.Clients.Producers.Producer - Producer已启动.
+2017-06-19 06:21:47,307  INFO Program - ----Send message starting----
+2017-06-19 06:21:47,359 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFB4AA314290013190A,Type:1,Code:10005,Sequence:2,CreatedTime2017-06-19 06:21:47.310,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:47,370 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:21:47,374 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFB4AA314290013190B,Type:1,Code:10005,Sequence:3,CreatedTime2017-06-19 06:21:47.371,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:47,374 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:21:47,380 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFB4AA314290013190C,Type:1,Code:10005,Sequence:4,CreatedTime2017-06-19 06:21:47.374,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:47,381 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:21:47,386 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFB4AA314290013190D,Type:1,Code:10005,Sequence:5,CreatedTime2017-06-19 06:21:47.381,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:47,386 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:21:47,389 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFB4AA314290013190E,Type:1,Code:10005,Sequence:6,CreatedTime2017-06-19 06:21:47.386,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:47,390 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:21:47,390 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:21:50,397 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFE4AA3142900131913,Type:1,Code:10005,Sequence:11,CreatedTime2017-06-19 06:21:50.391,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:50,397 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:21:50,408 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFE4AA3142900131914,Type:1,Code:10005,Sequence:12,CreatedTime2017-06-19 06:21:50.397,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:50,408 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:21:50,415 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFE4AA3142900131915,Type:1,Code:10005,Sequence:13,CreatedTime2017-06-19 06:21:50.408,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:50,415 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:21:50,422 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFE4AA3142900131916,Type:1,Code:10005,Sequence:14,CreatedTime2017-06-19 06:21:50.415,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:50,422 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:21:50,428 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FCFE4AA3142900131917,Type:1,Code:10005,Sequence:15,CreatedTime2017-06-19 06:21:50.422,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:50,428 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:21:50,428 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:21:53,465 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD014AA314290013191C,Type:1,Code:10005,Sequence:20,CreatedTime2017-06-19 06:21:53.430,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:53,465 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:21:53,494 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD014AA314290013191D,Type:1,Code:10005,Sequence:21,CreatedTime2017-06-19 06:21:53.465,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:53,494 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:21:53,502 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD014AA314290013191E,Type:1,Code:10005,Sequence:22,CreatedTime2017-06-19 06:21:53.494,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:53,502 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:21:53,511 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD014AA314290013191F,Type:1,Code:10005,Sequence:23,CreatedTime2017-06-19 06:21:53.502,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:53,511 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:21:53,516 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD014AA3142900131920,Type:1,Code:10005,Sequence:24,CreatedTime2017-06-19 06:21:53.511,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:53,516 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:21:53,516 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:21:56,547 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD044AA3142900131924,Type:1,Code:10005,Sequence:28,CreatedTime2017-06-19 06:21:56.518,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:56,547 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:21:56,556 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD044AA3142900131925,Type:1,Code:10005,Sequence:29,CreatedTime2017-06-19 06:21:56.547,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:56,556 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:21:56,567 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD044AA3142900131926,Type:1,Code:10005,Sequence:30,CreatedTime2017-06-19 06:21:56.558,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:56,568 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:21:56,577 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD044AA3142900131927,Type:1,Code:10005,Sequence:31,CreatedTime2017-06-19 06:21:56.568,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:56,577 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:21:56,584 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD044AA3142900131928,Type:1,Code:10005,Sequence:32,CreatedTime2017-06-19 06:21:56.577,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:56,584 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:21:56,584 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:21:59,603 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD074AA314290013192D,Type:1,Code:10005,Sequence:37,CreatedTime2017-06-19 06:21:59.586,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:59,603 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:21:59,611 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD074AA314290013192E,Type:1,Code:10005,Sequence:38,CreatedTime2017-06-19 06:21:59.603,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:59,611 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:21:59,617 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD074AA314290013192F,Type:1,Code:10005,Sequence:39,CreatedTime2017-06-19 06:21:59.612,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:59,617 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:21:59,623 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD074AA3142900131930,Type:1,Code:10005,Sequence:40,CreatedTime2017-06-19 06:21:59.617,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:59,625 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:21:59,632 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD074AA3142900131931,Type:1,Code:10005,Sequence:41,CreatedTime2017-06-19 06:21:59.625,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:21:59,632 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:21:59,632 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:02,658 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0A4AA3142900131935,Type:1,Code:10005,Sequence:45,CreatedTime2017-06-19 06:22:02.634,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:02,659 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:02,680 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0A4AA3142900131936,Type:1,Code:10005,Sequence:46,CreatedTime2017-06-19 06:22:02.659,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:02,681 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:02,699 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0A4AA3142900131937,Type:1,Code:10005,Sequence:47,CreatedTime2017-06-19 06:22:02.681,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:02,699 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:02,705 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0A4AA3142900131938,Type:1,Code:10005,Sequence:48,CreatedTime2017-06-19 06:22:02.699,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:02,706 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:02,716 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0A4AA3142900131939,Type:1,Code:10005,Sequence:49,CreatedTime2017-06-19 06:22:02.706,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:02,717 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:02,717 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:05,735 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0D4AA314290013193E,Type:1,Code:10005,Sequence:54,CreatedTime2017-06-19 06:22:05.718,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:05,735 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:05,751 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0D4AA314290013193F,Type:1,Code:10005,Sequence:55,CreatedTime2017-06-19 06:22:05.737,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:05,752 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:05,762 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0D4AA3142900131940,Type:1,Code:10005,Sequence:56,CreatedTime2017-06-19 06:22:05.752,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:05,762 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:05,770 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0D4AA3142900131941,Type:1,Code:10005,Sequence:57,CreatedTime2017-06-19 06:22:05.762,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:05,770 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:05,780 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD0D4AA3142900131942,Type:1,Code:10005,Sequence:58,CreatedTime2017-06-19 06:22:05.771,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:05,782 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:05,782 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:08,799 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD104AA3142900131947,Type:1,Code:10005,Sequence:63,CreatedTime2017-06-19 06:22:08.783,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:08,800 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:08,817 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD104AA3142900131948,Type:1,Code:10005,Sequence:64,CreatedTime2017-06-19 06:22:08.800,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:08,817 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:08,825 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD104AA3142900131949,Type:1,Code:10005,Sequence:65,CreatedTime2017-06-19 06:22:08.817,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:08,825 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:08,836 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD104AA314290013194A,Type:1,Code:10005,Sequence:66,CreatedTime2017-06-19 06:22:08.825,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:08,837 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:08,848 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD104AA314290013194B,Type:1,Code:10005,Sequence:67,CreatedTime2017-06-19 06:22:08.837,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:08,848 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:08,849 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:11,856 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD134AA314290013194F,Type:1,Code:10005,Sequence:71,CreatedTime2017-06-19 06:22:11.850,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:11,856 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:11,866 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD134AA3142900131950,Type:1,Code:10005,Sequence:72,CreatedTime2017-06-19 06:22:11.856,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:11,866 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:11,873 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD134AA3142900131951,Type:1,Code:10005,Sequence:73,CreatedTime2017-06-19 06:22:11.866,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:11,873 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:11,881 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD134AA3142900131952,Type:1,Code:10005,Sequence:74,CreatedTime2017-06-19 06:22:11.873,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:11,882 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:11,888 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD134AA3142900131953,Type:1,Code:10005,Sequence:75,CreatedTime2017-06-19 06:22:11.882,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:11,888 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:11,888 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:14,910 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD164AA3142900131958,Type:1,Code:10005,Sequence:80,CreatedTime2017-06-19 06:22:14.890,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:14,910 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:14,939 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD164AA3142900131959,Type:1,Code:10005,Sequence:81,CreatedTime2017-06-19 06:22:14.911,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:14,939 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:14,950 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD164AA314290013195A,Type:1,Code:10005,Sequence:82,CreatedTime2017-06-19 06:22:14.939,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:14,950 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:14,963 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD164AA314290013195B,Type:1,Code:10005,Sequence:83,CreatedTime2017-06-19 06:22:14.951,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:14,964 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:14,975 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD164AA314290013195C,Type:1,Code:10005,Sequence:84,CreatedTime2017-06-19 06:22:14.964,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:14,975 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:14,975 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:16,965  INFO OceanChip.Common.Socketing.TcpConnection - Socket以关闭，远程节点：192.168.1.2:5000,SocketError:ConnectionReset，原因：Socket接收错误,异常：
+2017-06-19 06:22:16,966  INFO OceanChip.Common.Socketing.TcpConnection - Socket以关闭，远程节点：192.168.1.2:5002,SocketError:ConnectionReset，原因：Socket接收错误,异常：
+2017-06-19 06:22:17,967  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5002
+2017-06-19 06:22:17,967  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5000
+2017-06-19 06:22:18,968  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:18,970  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:18,988 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD194AA3142900131960,Type:1,Code:10005,Sequence:88,CreatedTime2017-06-19 06:22:17.976,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:18,988 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:19,970  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5002
+2017-06-19 06:22:19,970  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5000
+2017-06-19 06:22:20,038 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD1A4AA3142900131963,Type:1,Code:10005,Sequence:91,CreatedTime2017-06-19 06:22:18.995,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:20,038 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:20,972  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:20,972  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:21,069 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD1C4AA3142900131965,Type:1,Code:10005,Sequence:93,CreatedTime2017-06-19 06:22:20.039,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:21,069 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:21,973  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5002
+2017-06-19 06:22:21,973  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5000
+2017-06-19 06:22:22,095 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD1D4AA3142900131967,Type:1,Code:10005,Sequence:95,CreatedTime2017-06-19 06:22:21.069,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:22,095 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:22,979  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:22,979  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:23,115 ERROR OceanChip.Queue.Clients.ClientService - GetTopicRouteInfoList发生异常,topic:t1
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FD1E4AA3142900131969,Type:1,Code:10005,Sequence:97,CreatedTime2017-06-19 06:22:22.095,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.GetTopicMessageQueues(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 139
+2017-06-19 06:22:23,116 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:23,116 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:23,990  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5002
+2017-06-19 06:22:23,990  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5000
+2017-06-19 06:22:24,991  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:24,992  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:26,004  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5000
+2017-06-19 06:22:26,004  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5002
+2017-06-19 06:22:26,121 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:26,121 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:26,121 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:26,121 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:26,121 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:26,121 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:27,005  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:27,005  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：ConnectionRefused
+2017-06-19 06:22:28,006  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5000
+2017-06-19 06:22:28,006  INFO OceanChip.Common.Remoting.SocketRemotingClient - 尝试重连服务器，服务器地址：192.168.1.2:5002
+2017-06-19 06:22:29,006  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：OperationAborted
+2017-06-19 06:22:29,007  INFO OceanChip.Queue.Clients.ClientService - 移除Broker：[BrokerName=Broker1,GroupName=BrokerGroup1,ClusterName=DefaultCluster,BrokerRole=0,ProducerAddress=192.168.1.2:5000,ConsumerAddress=192.168.1.2:5001,AdminAddress=192.168.1.2:5002]
+2017-06-19 06:22:29,007  INFO OceanChip.Common.Socketing.ClientSocket - 关闭网络链接，SocketError：OperationAborted
+2017-06-19 06:22:29,122 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:29,122 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:29,122 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:29,122 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:29,122 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:29,122 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:32,123 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:32,123 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:32,123 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:32,123 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:32,123 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:32,123 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:35,124 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:35,124 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:35,124 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:35,124 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:35,124 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:35,124 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:38,125 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:38,125 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:38,125 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:38,125 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:38,125 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:38,125 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:41,126 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:41,126 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:41,126 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:41,126 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:41,126 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:41,126 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:44,127 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:44,127 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:44,127 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:44,127 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:44,127 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:44,127 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:47,128 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:47,128 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:47,128 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:47,128 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:47,128 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:47,128 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:50,129 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:50,129 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:50,129 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:50,129 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:50,129 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:50,129 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:53,130 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:53,130 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:53,130 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:53,130 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:53,130 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:53,130 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:56,131 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:56,131 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:56,131 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:56,131 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:56,131 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:56,131 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:22:59,132 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:22:59,132 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:22:59,133 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:22:59,133 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:22:59,133 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:22:59,134 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:02,136 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:02,136 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:02,136 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:02,136 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:02,136 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:02,136 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:05,138 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:05,139 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:05,139 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:05,139 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:05,139 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:05,139 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:08,140 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:08,140 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:08,140 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:08,140 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:08,140 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:08,140 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:11,141 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:11,141 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:11,143 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:11,143 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:11,143 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:11,143 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:14,145 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:14,145 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:14,145 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:14,145 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:14,145 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:14,145 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:17,146 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:17,146 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:17,146 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:17,146 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:17,146 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:17,146 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:20,147 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:20,147 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:20,147 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:20,147 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:20,147 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:20,147 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:23,148 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:23,148 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:23,148 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:23,148 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:23,148 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:23,148 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:26,150 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:26,150 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:26,150 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:26,150 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:26,150 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:26,151 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:29,152 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:29,152 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:29,152 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:29,152 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:29,152 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:29,152 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:32,153 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:32,153 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:32,153 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:32,153 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:32,153 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:32,153 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:35,154 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:35,154 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:35,154 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:35,154 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:35,154 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:35,154 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:38,155 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:38,155 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:38,155 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:38,155 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:38,155 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:38,155 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:41,165 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:41,165 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:41,165 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:41,165 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:41,165 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:41,165 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:44,166 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:44,166 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:44,166 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:44,166 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:44,166 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:44,166 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:47,167 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:47,167 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:47,167 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:47,167 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:47,167 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:47,167 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:50,168 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:50,168 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:50,168 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:50,168 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:50,168 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:50,168 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:53,169 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:53,169 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:53,169 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:53,169 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:53,169 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:53,169 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:56,170 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:56,170 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:56,170 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:56,170 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:56,170 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:56,170 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:23:59,171 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:23:59,171 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:23:59,171 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:23:59,171 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:23:59,171 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:23:59,171 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:02,172 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:02,172 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:02,172 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:02,172 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:02,172 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:02,172 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:05,173 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:05,173 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:05,173 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:05,173 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:05,173 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:05,173 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:08,174 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:08,174 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:08,174 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:08,174 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:08,174 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:08,174 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:11,175 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:11,175 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:11,175 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:11,175 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:11,175 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:11,175 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:14,176 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:14,176 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:14,176 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:14,176 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:14,176 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:14,176 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:17,177 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:17,177 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:17,177 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:17,177 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:17,177 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:17,177 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:20,178 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:20,178 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:20,178 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:20,178 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:20,178 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:20,178 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:23,179 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:23,179 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:23,179 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:23,179 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:23,179 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:23,179 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:26,180 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:26,180 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:26,180 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:26,180 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:26,180 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:26,180 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:29,181 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:29,181 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:29,181 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:29,181 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:29,181 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:29,181 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:32,182 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:32,182 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:32,182 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:32,182 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:32,182 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:32,182 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:35,183 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:35,183 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:35,183 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:35,183 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:35,183 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:35,183 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:38,184 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:38,184 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:38,184 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:38,184 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:38,184 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:38,184 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:41,185 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:41,185 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:41,185 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:41,185 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:41,185 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:41,185 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:44,186 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:44,186 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:44,186 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:44,186 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:44,186 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:44,186 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:47,187 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:47,187 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:47,187 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:47,187 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:47,187 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:47,187 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:50,188 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:50,188 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:50,188 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:50,188 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:50,188 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:50,188 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:53,189 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:53,189 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:53,189 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:53,189 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:53,189 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:53,189 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:56,190 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:56,190 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:56,190 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:56,190 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:56,190 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:56,190 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:24:59,191 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:24:59,191 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:24:59,191 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:24:59,191 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:24:59,191 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:24:59,191 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:02,192 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:02,192 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:02,192 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:02,192 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:02,192 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:02,192 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:05,193 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:05,193 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:05,193 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:05,193 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:05,193 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:05,193 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:08,194 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:08,194 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:08,194 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:08,194 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:08,194 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:08,194 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:11,195 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:11,195 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:11,195 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:11,195 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:11,195 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:11,195 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:14,196 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:14,196 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:14,196 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:14,196 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:14,196 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:14,196 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:17,197 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:17,197 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:17,197 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:17,197 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:17,197 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:17,197 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:20,198 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:20,198 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:20,198 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:20,198 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:20,198 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:20,198 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:23,199 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:23,199 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:23,199 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:23,199 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:23,199 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:23,199 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:24,255  INFO OceanChip.Common.Socketing.ClientSocket - 连接成功,远程地址：192.168.1.2:5000，本地地址：192.168.1.2:51228
+2017-06-19 06:25:24,256  INFO OceanChip.Common.Socketing.ClientSocket - 连接成功,远程地址：192.168.1.2:5002，本地地址：192.168.1.2:51229
+2017-06-19 06:25:24,256  INFO OceanChip.Queue.Clients.ClientService - 添加Broker:[BrokerName=Broker1,GroupName=BrokerGroup1,ClusterName=DefaultCluster,BrokerRole=0,ProducerAddress=192.168.1.2:5000,ConsumerAddress=192.168.1.2:5001,AdminAddress=192.168.1.2:5002]
+2017-06-19 06:25:24,483 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FDD44AA31429001319BA,Type:1,Code:10005,Sequence:178,CreatedTime2017-06-19 06:25:24.256,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.RefreshTopicRouteInfo() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 258
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 79
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:25:26,200 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:26,200 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:26,200 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:26,200 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:26,200 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:26,200 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:29,201 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:29,201 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:29,201 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:29,201 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:29,201 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:29,201 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:29,571 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FDD94AA31429001319C2,Type:1,Code:10005,Sequence:186,CreatedTime2017-06-19 06:25:29.486,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.RefreshTopicRouteInfo() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 258
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 79
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:25:32,202 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:32,202 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:32,202 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:32,202 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:32,202 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:32,202 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:34,686 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:-1,errorMessage:远程请求句柄引起未知异常：Id:5946FDDE4AA31429001319C9,Type:1,Code:10005,Sequence:193,CreatedTime2017-06-19 06:25:34.581,BodyLength:446,Header:[]
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.RefreshTopicRouteInfo() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 258
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 79
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:25:35,203 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:35,203 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:35,203 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:35,203 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:35,203 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:35,203 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:38,204 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:38,204 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:38,204 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:38,204 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:38,204 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:38,204 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:41,205 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:41,205 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:41,205 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:41,205 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:41,205 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:41,205 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:44,206 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:44,206 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:44,206 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:44,206 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:44,206 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:44,206 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:45,278 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取名字路由信息失败,topic:t1,nameServeAddress:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:0,errorMessage:Remoting request timeout.
+   在 OceanChip.Queue.Clients.ClientService.GetTopicRouteInfoList(String topic) 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 298
+   在 OceanChip.Queue.Clients.ClientService.RefreshTopicRouteInfo() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 258
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 79
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:25:47,207 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:47,207 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:47,207 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:47,207 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:47,207 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:47,208 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:50,209 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:50,209 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:50,209 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:50,209 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:50,209 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:50,209 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:53,210 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:53,210 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:53,210 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:53,210 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:53,210 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:53,210 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:55,330 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取Broker集群失败，clusterName:DefaultCluster,nameServer:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:0,ErrorMessage:Remoting request timeout.
+   在 OceanChip.Queue.Clients.ClientService.GetClusterBrokerList() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 183
+   在 OceanChip.Queue.Clients.ClientService.RefreshClusterBrokers() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 219
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 78
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:25:56,211 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:56,211 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:56,211 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:56,211 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:56,211 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:56,211 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:25:59,213 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:25:59,213 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:25:59,213 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:25:59,213 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:25:59,213 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:25:59,213 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:02,214 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:02,214 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:02,214 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:02,214 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:02,214 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:02,214 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:05,215 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:05,215 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:05,215 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:05,215 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:05,215 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:05,215 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:05,364 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取Broker集群失败，clusterName:DefaultCluster,nameServer:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:0,ErrorMessage:Remoting request timeout.
+   在 OceanChip.Queue.Clients.ClientService.GetClusterBrokerList() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 183
+   在 OceanChip.Queue.Clients.ClientService.RefreshClusterBrokers() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 219
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 78
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:26:08,216 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:08,216 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:08,216 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:08,216 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:08,216 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:08,216 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:11,217 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:11,217 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:11,217 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:11,217 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:11,217 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:11,217 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:14,219 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:14,219 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:14,219 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:14,219 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:14,219 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:14,219 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:15,412 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取Broker集群失败，clusterName:DefaultCluster,nameServer:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:0,ErrorMessage:Remoting request timeout.
+   在 OceanChip.Queue.Clients.ClientService.GetClusterBrokerList() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 183
+   在 OceanChip.Queue.Clients.ClientService.RefreshClusterBrokers() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 219
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 78
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:26:17,236 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:17,236 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:17,236 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:17,236 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:17,236 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:17,236 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:20,237 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:20,237 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:20,237 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:20,237 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:20,237 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:20,237 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:23,238 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:23,238 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:23,238 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:23,238 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:23,238 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:23,238 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:25,459 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取Broker集群失败，clusterName:DefaultCluster,nameServer:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:0,ErrorMessage:Remoting request timeout.
+   在 OceanChip.Queue.Clients.ClientService.GetClusterBrokerList() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 183
+   在 OceanChip.Queue.Clients.ClientService.RefreshClusterBrokers() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 219
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 78
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:26:26,239 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:26,239 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:26,239 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:26,239 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:26,239 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:26,239 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:29,240 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:29,240 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:29,240 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:29,240 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:29,240 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:29,241 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:32,242 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:32,242 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:32,242 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:32,242 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:32,242 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:32,242 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:35,244 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:35,244 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:35,244 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:35,244 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:35,244 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:35,244 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:35,490 ERROR OceanChip.Common.Scheduling.ScheduleService - 任务发生异常，name:RefreshBrokerAndTopicRouteInfo,due:1000,period:5000.
+System.Exception: 通过地址获取Broker集群失败，clusterName:DefaultCluster,nameServer:OceanChip.Common.Remoting.SocketRemotingClient,remoting ResponseCode:0,ErrorMessage:Remoting request timeout.
+   在 OceanChip.Queue.Clients.ClientService.GetClusterBrokerList() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 183
+   在 OceanChip.Queue.Clients.ClientService.RefreshClusterBrokers() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 219
+   在 OceanChip.Queue.Clients.ClientService.<Start>b__15_0() 位置 H:\项目\基础\OQueue\OQueue\Clients\ClientService.cs:行号 78
+   在 OceanChip.Common.Scheduling.ScheduleService.TaskCallback(Object obj) 位置 H:\项目\基础\OComon\OCommon\Scheduling\ScheduleService.cs:行号 58
+2017-06-19 06:26:38,246 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:38,246 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:38,246 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:38,246 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:38,246 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:38,246 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:41,247 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效
+2017-06-19 06:26:41,247 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:1
+2017-06-19 06:26:41,247 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:2
+2017-06-19 06:26:41,247 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:3
+2017-06-19 06:26:41,247 ERROR OceanChip.Queue.Clients.Producers.Producer - topic[t1]消息队列无效，retryTimes:4
+2017-06-19 06:26:41,247 ERROR Program - Send message failed, errorMsg:topic[t1]的消息队列无效
+2017-06-19 06:26:42,875  INFO OceanChip.Common.Socketing.TcpConnection - Socket以关闭，远程节点：192.168.1.2:5000,SocketError:ConnectionReset，原因：Socket接收错误,异常：
+2017-06-19 06:26:42,878  INFO OceanChip.Common.Socketing.TcpConnection - Socket以关闭，远程节点：192.168.1.2:5002,SocketError:ConnectionReset，原因：Socket接收错误,异常：
+2017-06-19 06:27:02,272  INFO OceanChip.Queue.NameServer.NameServerController - NameServer服务开始启动...
+2017-06-19 06:27:02,281  INFO OceanChip.Common.Socketing.ServerSocket - Socket服务开始启动，监听地址：192.168.1.2:9593
+2017-06-19 06:27:02,282  INFO OceanChip.Queue.NameServer.NameServerController - NameServer服务启动成功，启动花费时间：11ms,绑定地址：192.168.1.2:9593
+2017-06-19 06:28:31,374  INFO OceanChip.Queue.NameServer.NameServerController - NameServer服务开始启动...
+2017-06-19 06:28:31,382  INFO OceanChip.Common.Socketing.ServerSocket - Socket服务开始启动，监听地址：192.168.1.2:9593
+2017-06-19 06:28:31,383  INFO OceanChip.Queue.NameServer.NameServerController - NameServer服务启动成功，启动花费时间：9ms,绑定地址：192.168.1.2:9593
+2017-06-19 06:29:03,692  INFO OceanChip.Common.Socketing.ServerSocket - 网络请求，远端地址：192.168.1.2:51244
+2017-06-19 06:29:03,899  INFO OceanChip.Queue.NameServer.ClusterManager - 注册新Broker，BrokerInfo:{"BrokerName":"Broker1","GroupName":"BrokerGroup1","ClusterName":"DefaultCluster","BrokerRole":0,"ProducerAddress":"192.168.1.2:5000","ConsumerAddress":"192.168.1.2:5001","AdminAddress":"192.168.1.2:5002"}
+2017-06-19 06:29:14,947  INFO OceanChip.Common.Socketing.TcpConnection - Socket以关闭，远程节点：192.168.1.2:51244,SocketError:ConnectionReset，原因：Socket接收错误,异常：
