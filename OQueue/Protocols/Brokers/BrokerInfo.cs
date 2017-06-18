@@ -31,7 +31,7 @@ namespace OceanChip.Queue.Protocols.Brokers
         /// <summary>
         /// 供Producer连接的地址；默认IP为本地IP，默认端口5000，格式为IP：port
         /// </summary>
-        public string ProducterAddrss { get; set; }
+        public string ProducerAddress { get; set; }
         /// <summary>
         /// 供Consumer连接的地址；默认IP为本地IP，默认端口5001，格式为IP：port
         /// </summary>
@@ -48,7 +48,7 @@ namespace OceanChip.Queue.Protocols.Brokers
             this.GroupName = groupName;
             this.ClusterName = clusterName;
             this.BrokerRole = (int)role;
-            this.ProducterAddrss = producerAddress;
+            this.ProducerAddress = producerAddress;
             this.ConsumerAddress = consumerAddress;
             this.AdminAddress = adminAddress;
         }
@@ -57,7 +57,7 @@ namespace OceanChip.Queue.Protocols.Brokers
             Check.NotNull(BrokerName, nameof(BrokerName));
             Check.NotNull(GroupName, nameof(GroupName));
             Check.NotNull(ClusterName, nameof(ClusterName));
-            Check.NotNull(ProducterAddrss, nameof(ProducterAddrss));
+            Check.NotNull(ProducerAddress, nameof(ProducerAddress));
             Check.NotNull(ConsumerAddress, nameof(ConsumerAddress));
             Check.NotNull(AdminAddress, nameof(AdminAddress));
             if(BrokerRole != (int)Brokers.BrokerRole.Master && BrokerRole != (int)Brokers.BrokerRole.Slave)
@@ -73,14 +73,14 @@ namespace OceanChip.Queue.Protocols.Brokers
                 && GroupName == other.GroupName
                 && ClusterName == other.ClusterName
                 && BrokerRole == other.BrokerRole
-                && ProducterAddrss == other.ProducterAddrss
+                && ProducerAddress == other.ProducerAddress
                 && ConsumerAddress == other.ConsumerAddress
                 && AdminAddress == other.AdminAddress;
         }
         public override string ToString()
         {
             return $"[BrokerName={BrokerName},GroupName={GroupName},ClusterName={ClusterName},BrokerRole={BrokerRole}," +
-                $"ProducerAddress={ProducterAddrss},ConsumerAddress={ConsumerAddress},AdminAddress={AdminAddress}]"; ;
+                $"ProducerAddress={ProducerAddress},ConsumerAddress={ConsumerAddress},AdminAddress={AdminAddress}]"; ;
         }
     }
 }

@@ -90,7 +90,7 @@ namespace OceanChip.Queue.Clients.Consumers
             _logger.InfoFormat("{0} stopped.", GetType().Name);
             return this;
         }
-        public Consumer SubScribe(string topic,params string[] tags)
+        public Consumer Subscribe(string topic,params string[] tags)
         {
             if (!_subscriptionTopics.ContainsKey(topic))
             {

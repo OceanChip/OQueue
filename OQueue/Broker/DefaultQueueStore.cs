@@ -38,6 +38,7 @@ namespace OceanChip.Queue.Broker
             this._scheduleService = scheduleService;
             this._tpsStaticticService = tpsStatService;
             this._logger = loggerFactory.Create(GetType().FullName);
+            this._queueDict = new ConcurrentDictionary<QueueKey, Queue>();
         }
         public void AddQueue(string topic)
         {

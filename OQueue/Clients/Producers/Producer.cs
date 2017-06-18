@@ -99,7 +99,7 @@ namespace OceanChip.Queue.Clients.Producers
             return sendResult;
         }
 
-        public async Task<BatchSendResult> BatchSendAsync(IEnumerable<Message> messages, string routingKey, int timeoutMillisecond)
+        public async Task<BatchSendResult> BatchSendAsync(IEnumerable<Message> messages, string routingKey, int timeoutMillisecond=1000*30)
         { 
             Check.NotNull(messages, nameof(messages));
             if (!_started)
@@ -178,7 +178,7 @@ namespace OceanChip.Queue.Clients.Producers
             var remotingRequest = BuildBatchSendMessageRequest(messages, messageQueue.QueueId, brokerConnection);
             brokerConnection.RemotingClient.InvokeWithCallback(remotingRequest);
         }
-        public void SendOnway(Message message,string routingKey)
+        public void SendOneway(Message message,string routingKey)
         {
             Check.NotNull(message, nameof(message));
             if (!_started)
@@ -193,7 +193,7 @@ namespace OceanChip.Queue.Clients.Producers
             var remotingRequest = BuildSendMessageRequest(message, messageQueue.QueueId, brokerConnection);
             brokerConnection.RemotingClient.InvokeOnway(remotingRequest);
         }
-        public void BatchSendOnway(IEnumerable<Message> messages, string routingKey)
+        public void BatchSendOneway(IEnumerable<Message> messages, string routingKey)
         {
             Check.NotNull(messages, nameof(messages));
             if (!_started)
@@ -208,7 +208,7 @@ namespace OceanChip.Queue.Clients.Producers
             var remotingRequest = BuildBatchSendMessageRequest(messages, messageQueue.QueueId, brokerConnection);
             brokerConnection.RemotingClient.InvokeOnway(remotingRequest);
         }
-        public BatchSendResult ParseBatchSendResult(RemotingResponse remotingResponse)
+        public static BatchSendResult ParseBatchSendResult(RemotingResponse remotingResponse)
         {
             Check.NotNull(remotingResponse, nameof(remotingResponse));
             if (remotingResponse.RequestCode == ResponseCode.Success)
@@ -226,7 +226,7 @@ namespace OceanChip.Queue.Clients.Producers
             }
         }
 
-        public async Task<SendResult> SendAsync(Message message, string routingKey, int timeoutMillisecond)
+        public async Task<SendResult> SendAsync(Message message, string routingKey, int timeoutMillisecond=1000*30)
         {
             Check.NotNull(message, nameof(message));
             if (!_started)
@@ -272,7 +272,7 @@ namespace OceanChip.Queue.Clients.Producers
             return sendResult;
         }
 
-        public SendResult ParseSendResult(RemotingResponse remotingResponse)
+        public static SendResult ParseSendResult(RemotingResponse remotingResponse)
         {
             Check.NotNull(remotingResponse, nameof(remotingResponse));
             if(remotingResponse.RequestCode == ResponseCode.Success)

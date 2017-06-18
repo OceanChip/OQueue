@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OceanChip.Queue.Protocols.NameServers
+namespace OceanChip.Queue.Protocols.Brokers
 {
     [Serializable]
     public class BrokerStatusInfo

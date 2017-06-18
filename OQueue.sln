@@ -5,6 +5,20 @@ VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OceanChip.Queue", "OQueue\OceanChip.Queue.csproj", "{F5D7D9ED-5E48-4439-BFFA-DEFFBE45785C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OQueue.AdminWeb", "OQueue.AdminWeb\OQueue.AdminWeb.csproj", "{431AC064-405E-4650-A946-1216528795D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{E053A4D6-CCF1-494D-90B5-73988CC481E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.NameServer", "QuickStart.NameServer\QuickStart.NameServer.csproj", "{842B7330-09B1-4889-9D22-6A20018A4F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.ProducerClient", "QuickStart.ProducerClient\QuickStart.ProducerClient.csproj", "{8080B782-45ED-4AA0-B8C1-C45E9695FD95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.ConsumerClient", "QuickStart.ConsumerClient\QuickStart.ConsumerClient.csproj", "{5EAFF10D-2E24-4235-B81C-EC696200E80C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.BrokerServer1", "QuickStart.BrokerServer1\QuickStart.BrokerServer1.csproj", "{F0D173EB-2AC9-41D7-827D-3DDB53C75D8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.BrokerServer2", "QuickStart.BrokerServer2\QuickStart.BrokerServer2.csproj", "{83B80047-6BEF-4C96-B12D-465A6F820A12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +29,39 @@ Global
 		{F5D7D9ED-5E48-4439-BFFA-DEFFBE45785C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5D7D9ED-5E48-4439-BFFA-DEFFBE45785C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5D7D9ED-5E48-4439-BFFA-DEFFBE45785C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431AC064-405E-4650-A946-1216528795D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431AC064-405E-4650-A946-1216528795D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431AC064-405E-4650-A946-1216528795D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431AC064-405E-4650-A946-1216528795D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842B7330-09B1-4889-9D22-6A20018A4F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842B7330-09B1-4889-9D22-6A20018A4F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842B7330-09B1-4889-9D22-6A20018A4F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842B7330-09B1-4889-9D22-6A20018A4F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8080B782-45ED-4AA0-B8C1-C45E9695FD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8080B782-45ED-4AA0-B8C1-C45E9695FD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8080B782-45ED-4AA0-B8C1-C45E9695FD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8080B782-45ED-4AA0-B8C1-C45E9695FD95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAFF10D-2E24-4235-B81C-EC696200E80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAFF10D-2E24-4235-B81C-EC696200E80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAFF10D-2E24-4235-B81C-EC696200E80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAFF10D-2E24-4235-B81C-EC696200E80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D173EB-2AC9-41D7-827D-3DDB53C75D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D173EB-2AC9-41D7-827D-3DDB53C75D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D173EB-2AC9-41D7-827D-3DDB53C75D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D173EB-2AC9-41D7-827D-3DDB53C75D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B80047-6BEF-4C96-B12D-465A6F820A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B80047-6BEF-4C96-B12D-465A6F820A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B80047-6BEF-4C96-B12D-465A6F820A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B80047-6BEF-4C96-B12D-465A6F820A12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{842B7330-09B1-4889-9D22-6A20018A4F80} = {E053A4D6-CCF1-494D-90B5-73988CC481E8}
+		{8080B782-45ED-4AA0-B8C1-C45E9695FD95} = {E053A4D6-CCF1-494D-90B5-73988CC481E8}
+		{5EAFF10D-2E24-4235-B81C-EC696200E80C} = {E053A4D6-CCF1-494D-90B5-73988CC481E8}
+		{F0D173EB-2AC9-41D7-827D-3DDB53C75D8C} = {E053A4D6-CCF1-494D-90B5-73988CC481E8}
+		{83B80047-6BEF-4C96-B12D-465A6F820A12} = {E053A4D6-CCF1-494D-90B5-73988CC481E8}
 	EndGlobalSection
 EndGlobal

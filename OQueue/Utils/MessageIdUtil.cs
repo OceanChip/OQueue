@@ -18,9 +18,9 @@ namespace OceanChip.Queue.Utils
         public static string CreateMessageId(long messagePosition)
         {
             if (_ipBytes == null)
-                _ipBytes = BrokerController.Instance.Setting.BrokerInfo.ProducterAddrss.ToEndPoint().Address.GetAddressBytes();
+                _ipBytes = BrokerController.Instance.Setting.BrokerInfo.ProducerAddress.ToEndPoint().Address.GetAddressBytes();
             if (_portBytes == null)
-                _portBytes = BitConverter.GetBytes(BrokerController.Instance.Setting.BrokerInfo.ProducterAddrss.ToEndPoint().Port);
+                _portBytes = BitConverter.GetBytes(BrokerController.Instance.Setting.BrokerInfo.ProducerAddress.ToEndPoint().Port);
             byte[] posBytes=BitConverter.GetBytes(messagePosition);
             byte[] messageidBytes = ByteUtil.Combine(_ipBytes, _portBytes, posBytes);
             return ObjectId.ToHexString(messageidBytes);

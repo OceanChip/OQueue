@@ -1,5 +1,6 @@
 ﻿using System;
 using OceanChip.Common.Remoting;
+using OceanChip.Queue.Protocols.Brokers.Requests;
 using OceanChip.Queue.Protocols.NameServers.Requests;
 
 namespace OceanChip.Queue.NameServer.RequestHandlers

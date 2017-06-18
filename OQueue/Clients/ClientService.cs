@@ -8,7 +8,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using OceanChip.Queue.Clients.Producers;
 using OceanChip.Queue.Clients.Consumers;
 using OceanChip.Common.Utilities;
@@ -16,11 +15,10 @@ using System.Threading;
 using OceanChip.Common.Components;
 using OceanChip.Common.Extensions;
 using OceanChip.Queue.Protocols.Brokers;
-using OceanChip.Queue.Protocols.NameServers.Requests;
-using OceanChip.Queue.Protocols.NameServers;
 using System.Net;
 using OceanChip.Common.Socketing;
 using System.Diagnostics;
+using OceanChip.Queue.Protocols.NameServers.Requests;
 
 namespace OceanChip.Queue.Clients
 {
@@ -332,7 +330,7 @@ namespace OceanChip.Queue.Clients
             IPEndPoint brokerEndPoint;
             if(_producer != null)
             {
-                brokerEndPoint = brokerInfo.ProducterAddrss.ToEndPoint();
+                brokerEndPoint = brokerInfo.ProducerAddress.ToEndPoint();
             }else if(_consumer != null)
             {
                 brokerEndPoint = brokerInfo.ConsumerAddress.ToEndPoint();

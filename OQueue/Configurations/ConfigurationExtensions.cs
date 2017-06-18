@@ -24,6 +24,7 @@ namespace OceanChip.Queue.Configurations
             configuration.SetDefault<ProducerManager, ProducerManager>();
             configuration.SetDefault<IQueueStore, DefaultQueueStore>();
             configuration.SetDefault<ConsumerManager, ConsumerManager>();
+            configuration.SetDefault<IConsumeOffsetStore, DefaultConsumeOffsetStore>();
             configuration.SetDefault<GetConsumerListService, GetConsumerListService>();
             configuration.SetDefault<GetTopicConsumeInfoListService, GetTopicConsumeInfoListService>();
             configuration.SetDefault<SuspendedPullRequestManager, SuspendedPullRequestManager>();

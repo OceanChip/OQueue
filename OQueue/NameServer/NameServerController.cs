@@ -4,7 +4,7 @@ using OceanChip.Common.Remoting;
 using OceanChip.Common.Socketing;
 using OceanChip.Common.Utilities;
 using OceanChip.Queue.NameServer.RequestHandlers;
-using OceanChip.Queue.Protocols.NameServers;
+using OceanChip.Queue.Protocols.Brokers;
 using System.Diagnostics;
 using System.Threading;
 using System;
@@ -30,7 +30,7 @@ namespace OceanChip.Queue.NameServer
             _logger = ObjectContainer.Resolve<ILoggerFactory>().Create(GetType().FullName);
             _service = new ConsoleEventHandlerService();
             _service.RegisterClosingEventHandler(eventCode => { Shutdown(); });
-            _socketRemotingServer = new SocketRemotingServer("OceanChip.Queue.NameServer.RemotingServer", setting.BindingAddress, setting.SocketSetting);
+            _socketRemotingServer = new SocketRemotingServer("OceanChip.Queue.NameServer.RemotingServer", Setting.BindingAddress, Setting.SocketSetting);
             RegisterRequestHandlers();
         }
         public NameServerController Start()

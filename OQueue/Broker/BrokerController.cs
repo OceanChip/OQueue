@@ -18,11 +18,12 @@ using System.Diagnostics;
 using System.Threading;
 using System.IO;
 using OceanChip.Queue.Protocols.Brokers;
-using OceanChip.Queue.Protocols.NameServers.Requests;
-using OceanChip.Queue.Protocols.NameServers;
+using OceanChip.Queue.Protocols.Brokers.Requests;
+using OceanChip.Queue.Protocols.Brokers;
 using OceanChip.Queue.Protocols;
 using OceanChip.Queue.Broker.RequestHandlers;
 using OceanChip.Queue.Broker.RequestHandlers.Admin;
+using OceanChip.Queue.Protocols.NameServers.Requests;
 
 namespace OceanChip.Queue.Broker
 {
@@ -82,14 +83,13 @@ namespace OceanChip.Queue.Broker
             this._chunkReadStatisticService = ObjectContainer.Resolve<IChunkStatisticService>();
             this._tpsStatisticService = ObjectContainer.Resolve<ITpsStatisticService>();
 
-            this._producerSocketRemotingServer = new SocketRemotingServer("OQueue.Broker.ProducerRemotingServer", Setting.BrokerInfo.ProducterAddrss.ToEndPoint(), this.Setting.SocketSetting);
+            this._producerSocketRemotingServer = new SocketRemotingServer("OQueue.Broker.ProducerRemotingServer", Setting.BrokerInfo.ProducerAddress.ToEndPoint(), this.Setting.SocketSetting);
             this._consumerSocketRemotingServer = new SocketRemotingServer("OQueue.Broke.ConsumerRemotingServer", this.Setting.BrokerInfo.ConsumerAddress.ToEndPoint(), this.Setting.SocketSetting);
             this._adminSocketRemotingServer = new SocketRemotingServer("OQueue.Broker.AdminRemotingServer", this.Setting.BrokerInfo.AdminAddress.ToEndPoint(), this.Setting.SocketSetting);
 
             _logger = ObjectContainer.Resolve<ILoggerFactory>().Create(GetType().FullName);
             _producerSocketRemotingServer.RegisterConnectionEventListener(new ProducerConnectionEventListener(this));
             _consumerSocketRemotingServer.RegisterConnectionEventListener(new ConsumerConnectionEventListener(this));
-            RegisterRequestHandlers();
 
             _service = new ConsoleEventHandlerService();
             _service.RegisterClosingEventHandler(eventCode => { Shutdown(); });
@@ -132,6 +132,7 @@ namespace OceanChip.Queue.Broker
         public static BrokerController Create(BrokerSetting setting = null)
         {
             _instance = new BrokerController(setting);
+            _instance.RegisterRequestHandlers();
             return _instance;
         }
         public BrokerController Clean()
@@ -159,7 +160,7 @@ namespace OceanChip.Queue.Broker
                     _queueStore.Start();
                     _logger.InfoFormat("Broker 清理成功，花费时间：{0}ms，producer:[{1}],consumer:[{2}],admin:[{3}]",
                         watch.ElapsedMilliseconds,
-                        this.Setting.BrokerInfo.ProducterAddrss,
+                        this.Setting.BrokerInfo.ProducerAddress,
                         this.Setting.BrokerInfo.ConsumerAddress,
                         this.Setting.BrokerInfo.AdminAddress
                         );
@@ -218,7 +219,7 @@ namespace OceanChip.Queue.Broker
 
             Interlocked.Exchange(ref _isShuttingdown, 0);
             _logger.InfoFormat("Broker启动成功，花费时间：{0}ms,producer:[{1}],consumer:[{2}],admin:[{3}]",
-                watch.ElapsedMilliseconds, Setting.BrokerInfo.ProducterAddrss,
+                watch.ElapsedMilliseconds, Setting.BrokerInfo.ProducerAddress,
                 Setting.BrokerInfo.ConsumerAddress, Setting.BrokerInfo.AdminAddress
                 );
             return this;
@@ -232,7 +233,7 @@ namespace OceanChip.Queue.Broker
             {
                 var watch = Stopwatch.StartNew();
                 _logger.InfoFormat("Broker开始关闭服务,producer:[{0}],consumer:[{1}],admin:[{2}]",
-                    this.Setting.BrokerInfo.ProducterAddrss,
+                    this.Setting.BrokerInfo.ProducerAddress,
                     this.Setting.BrokerInfo.ConsumerAddress,
                     this.Setting.BrokerInfo.AdminAddress);
                 _scheduleService.StopTask("RegisterBrokerToAllNameServers");
