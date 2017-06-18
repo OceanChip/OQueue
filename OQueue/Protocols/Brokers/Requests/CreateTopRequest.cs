@@ -14,7 +14,7 @@ namespace OceanChip.Queue.Protocols.Brokers.Requests
     {
         public string Topic { get; private set; }
         public int? InitialQueueCount { get; private set; }
-        public CreateTopicRequest(string topic,int? initQueueCount)
+        public CreateTopicRequest(string topic,int? initQueueCount=null)
         {
             this.Topic = topic;
             this.InitialQueueCount = initQueueCount;

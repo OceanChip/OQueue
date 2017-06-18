@@ -36,7 +36,7 @@ namespace OceanChip.Queue.Protocols.Brokers
         /// 更新消费者队列偏移请求
         /// </summary>
         UpdateQueueConsumeOffsetRequest=103,
-        GetProkerStatisticInfo=1000,
+        GetBrokerStatisticInfo=1000,
         GetTopicQueueInfo=1001,
         GetTopicConsumeInfo=1002,
         GetProducerList=1003,

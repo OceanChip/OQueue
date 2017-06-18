@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 namespace OceanChip.Queue.Protocols.NameServers
 {
     [Serializable]
-    public class BrokerTopQueueInfo
+    public class BrokerTopicQueueInfo
     {
         public BrokerInfo BrokerInfo { get; set; }
-        public IList<TopicQueueInfo> TopicConsumerInfo { get; set; }
-        public BrokerTopQueueInfo()
+        public IList<TopicQueueInfo> TopicConsumerInfoList { get; set; }
+        public BrokerTopicQueueInfo()
         {
-            TopicConsumerInfo = new List<TopicQueueInfo>();
+            TopicConsumerInfoList = new List<TopicQueueInfo>();
         }
     }
 }
