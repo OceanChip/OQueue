@@ -59,7 +59,7 @@ namespace OceanChip.Queue.Broker.RequestHandlers
             var message = request.Message;
             var queueId = request.QueueId;
             var queue = _queueStore.GetQueue(message.Topic, queueId);
-            if(queue != null)
+            if(queue == null)
             {
                 throw new QueueNotExistException(message.Topic, queueId);
             }

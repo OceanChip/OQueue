@@ -588,7 +588,7 @@ namespace OceanChip.Queue.NameServer
                                 Broker removed;
                                 if(brokerGroup.Brokers.TryRemove(broker.BrokerInfo.BrokerName,out removed))
                                 {
-                                    _logger.Info($"移除超时Broker,Broker信息：{_json.Serialize(broker)},最后更新时间：{broker.LastActiveTime}");
+                                    _logger.Info($"移除超时Broker,Broker信息：{_json.Serialize(removed.BrokerInfo)},最后更新时间：{broker.LastActiveTime}");
                                 }
                             }
                         }

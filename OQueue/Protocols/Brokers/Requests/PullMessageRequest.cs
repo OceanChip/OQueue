@@ -29,6 +29,7 @@ namespace OceanChip.Queue.Protocols.Brokers.Requests
                 writer.Write(request.MessageQueue.Topic);
                 writer.Write(request.MessageQueue.QueueId);
                 writer.Write(request.Tags);
+                writer.Write(request.QueueOffset);
                 writer.Write(request.PullMessageBatchSize);
                 writer.Write(request.SuspendPullRequestMilliseconds);
                 writer.Write((int)request.ConsumeFromWhere);

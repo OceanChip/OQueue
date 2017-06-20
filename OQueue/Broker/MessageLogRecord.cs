@@ -32,9 +32,9 @@ namespace OceanChip.Queue.Broker
             _callback = callback;
             _parameter = parameter;
         }
-        public void ReadFrom(byte[] recordBuffer)
-        {
-        }
+        //public void ReadFrom(byte[] recordBuffer)
+        //{
+        //}
 
         public void WriteTo(long logPosition, BinaryWriter writer)
         {

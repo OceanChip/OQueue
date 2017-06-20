@@ -335,7 +335,7 @@ namespace OceanChip.Queue.Clients.Consumers
                     var messageBytes = new byte[messageLength];
                     Buffer.BlockCopy(buffer, nextOffset, messageBytes, 0, messageLength);
                     nextOffset += messageLength;
-                    message.ReadForm(messageBytes);
+                    message.ReadFrom(messageBytes);
                     if (!message.IsValid())
                     {
                         _logger.ErrorFormat("无效的消息，pullRequest:{0}", request);

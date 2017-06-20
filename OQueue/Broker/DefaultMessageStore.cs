@@ -87,7 +87,7 @@ namespace OceanChip.Queue.Broker
                     var message = new QueueMessage();
                     var messageBytes = new byte[messageLength];
                     Buffer.BlockCopy(buffer, nextOffset, messageBytes, 0, messageLength);
-                    message.ReadForm(messageBytes);
+                    message.ReadFrom(messageBytes);
                     return message;
                 }
             }
@@ -172,7 +172,7 @@ namespace OceanChip.Queue.Broker
         private ILogRecord ReadMessage(byte[] recordBuffer)
         {
             var record = new MessageLogRecord();
-            record.ReadForm(recordBuffer);
+            record.ReadFrom(recordBuffer);
             return record;
         }
 

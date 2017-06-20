@@ -28,7 +28,7 @@ namespace OceanChip.Queue.Protocols
             this.StoredTime = storedTime;
             this.ProducerAddress = producerAddress;
         }
-        public virtual void ReadForm(byte[] recordBuffer)
+        public virtual void ReadFrom(byte[] recordBuffer)
         {
             int srcOffset = 0;
             LogPosition = ByteUtil.DecodeLong(recordBuffer, srcOffset, out srcOffset);
